@@ -104,7 +104,6 @@ lm.utils.copy( lm.controls.Tab.prototype, {
 		this.closeElement.off( 'click touchstart', this._onCloseClickFn );
 		if( this._dragListener ) {
 			this._dragListener.off( 'dragStart', this._onDragStart );
-			this._dragListener.destroy();
 			this._dragListener = null;
 		}
 		this.element.remove();
